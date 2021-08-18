@@ -1,0 +1,30 @@
+.msg-form {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+
+.msg-form__groupcontrol {
+    padding:0;
+    margin: 0 0 10px 0;
+}
+
+.msg-form__lbl {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.msg-form__input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    color: #555;
+}
+
+.msg-form__btn {
+    padding: 5px 10px;
+    font-size: 16px;
+}
