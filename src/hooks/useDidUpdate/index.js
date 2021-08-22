@@ -16,5 +16,5 @@ export const useDidUpdate = (fn, dependencies) => {
     } else {
       mounted.current = true;
     }
-  }, dependencies);
+  }, [fn, dependencies]);
 }

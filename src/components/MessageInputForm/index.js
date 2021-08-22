@@ -14,7 +14,7 @@ export const MessageInputForm = ({ onSubmit }) => {
     }
 
     const handleSubmit = (event) => {
-        let message = { id: Date.now(), dat: new Date().toLocaleString('ru-RU'), author: author, text: text };
+        let message = { id: Date.now(), dat: new Date().toLocaleString('ru-RU'), author: author, text: text, isBot: false };
         onSubmit(message);
         setAuthor('Guest');
         setText('');

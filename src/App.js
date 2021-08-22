@@ -9,14 +9,13 @@ function App(props) {
 
   useDidUpdate(() => {
     let i = messages.length - 1;
-    if (i >= 0) {
-      let $msglist = document.querySelector(".msg-list");
+    if (i >= 0 && !messages[i].isBot) {
+      let message = { id: Date.now(), dat: new Date().toLocaleString('ru-RU'), author: 'bot', text: `${messages[i].author}, ваше сообщение опубликовано!`, isBot: true };
       window.setTimeout(() => {
-        $msglist.insertAdjacentHTML('beforeend', `<div class="msg-item-requestbot">${messages[i].author}, ваше сообщение опубликовано!</div>`);
-        console.log(messages[i].text);
+        setNewMessage(message);
       }, 1500);
     }
-  })
+  }, messages)
 
   return (
     <div className="App">
