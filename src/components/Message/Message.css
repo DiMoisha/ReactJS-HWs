@@ -1,7 +1,21 @@
-.msg-text {
-    margin: 20px auto;
+.msg-item {
+    margin: 20px 0;
+    padding:0;
+}
+
+.msg-item__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #ccc; 
+    font-size: 12px;
+}
+
+.msg-item__text {
+    margin: 0;
     padding: 20px 10px;
-    max-width: 900px;
-    background-color: #ddd; 
     font-size: 16px;
+    text-align: left;
+    background-color: #eee; 
 }
