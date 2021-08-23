@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.msg-item-requestbot {
+  margin-bottom: 40px;
+  padding: 5px 30px;
+  background-color:#fff;
+  color:darkblue;
+  font-size: 14px;
+  text-align: left;
+}
