@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-
 import App from './App';
-//import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
+import { profileStore } from "./store/index";
+import { Provider } from 'react-redux';
 
-const headingApp = 'Homework-1';
-const message = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati doloribus exercitationem debitis quo, vel dignissimos voluptatibus saepe veniam inventore voluptatum pariatur modi commodi eum, cupiditate tempora ullam tenetur ratione fugiat.";
+const appHeading = 'ChatBook';
 
 ReactDOM.render(
- <React.StrictMode>
-   <App heading={headingApp} msgText={message} />
- </React.StrictMode>,
- document.getElementById("root")
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={profileStore}>
+        <App appHeading={appHeading} />
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
