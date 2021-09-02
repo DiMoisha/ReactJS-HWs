@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react';
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
@@ -29,14 +30,21 @@ export const Profile = (props) => {
 
   const [dummy, setDummy] = useState();
   const { showName, name } = profileStore.getState();
-  const dispatch = profileStore.dispatch;
-
+  const dispatch = useDispatch();
+  
   const setShowName = useCallback(() => {
-    dispatch(toggleShowName);
+    dispatch(toggleShowName());
     setDummy({});
   }, [dispatch]);
 
+//const dispatch = profileStore.dispatch;
+  // const setShowName = useCallback(() => {
+  //   dispatch(toggleShowName);
+  //   setDummy({});
+  // }, [dispatch]);
+
   return (
+    
     <Box component="main" className={props.classes.appContent}>
       <Box>
         <Typography component="h1"
@@ -76,6 +84,7 @@ export const Profile = (props) => {
         </button>
       </div>
     </Box>
+    
   );
 };
 
