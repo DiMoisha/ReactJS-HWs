@@ -1,16 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { persistor, store } from './store'
+import { PersistGate } from 'redux-persist/integration/react'
 import './index.css';
-
 import App from './App';
-//import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 
-const headingApp = 'Homework-1';
-const message = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati doloribus exercitationem debitis quo, vel dignissimos voluptatibus saepe veniam inventore voluptatum pariatur modi commodi eum, cupiditate tempora ullam tenetur ratione fugiat.";
+const appHeading = 'ChatBook';
 
 ReactDOM.render(
- <React.StrictMode>
-   <App heading={headingApp} msgText={message} />
- </React.StrictMode>,
- document.getElementById("root")
+    <React.StrictMode>
+        <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}>
+                <BrowserRouter>
+                    <App appHeading={appHeading} />
+                </BrowserRouter>
+            </PersistGate>
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
