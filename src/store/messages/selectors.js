@@ -1,0 +1,1 @@
+export const getMessages = (chatId) => (state) => state.messages.messageItems[chatId] || [];

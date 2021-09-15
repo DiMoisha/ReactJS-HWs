@@ -1,18 +1,13 @@
-import './App.css';
-import {Message} from "./components/Message";
+import React from 'react';
+import { Layout } from "./components/Layout";
+import { Routes } from "./components/Routes";
 
-function App(props) {
- return (
-   <div className="App">
-     <header className="App-header">
-       <h3>{props.heading}</h3>
-     </header>
-     <div className="App-body">
-      <Message msgText={props.msgText} />
-     </div>
-   </div>
- );
+function App() {
+    return (
+        <Layout>
+            <Routes/>
+        </Layout>
+    );
 }
 
 export default App;
-
