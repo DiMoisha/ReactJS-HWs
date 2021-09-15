@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { Route, Switch } from "react-router-dom";
+import {Route, Switch } from "react-router-dom";
 import { NoMatchPage } from "../../pages/NoMatchPage";
 import { Home } from "../../pages/Home";
 import { Login } from "../../pages/Login";
@@ -12,11 +12,16 @@ import { getIsAuth, initAuthAction } from '../../store/profile';
 import { PrivateRoute } from '../../hocs/PrivateRoute';
 import { PublicRoute } from '../../hocs/PublicRoute';
 import { initChatesTracking } from "../../store/chates";
+import { initMessagesTracking } from "../../store/messages";
 
 export const Routes  = ({ classes }) => {
     const isAuth = useSelector(getIsAuth);
     const prevIsAuth = useRef(isAuth);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(initAuthAction)
+    }, [])
 
     useEffect(() => {
         if (isAuth !== prevIsAuth.current) {
@@ -25,8 +30,10 @@ export const Routes  = ({ classes }) => {
     }, [isAuth])
 
     useEffect(() => {
-        dispatch(initAuthAction)
-    }, [])
+        if (isAuth !== prevIsAuth.current) {
+            dispatch(initMessagesTracking)
+        }
+    }, [isAuth])
 
     return (
         <Switch>

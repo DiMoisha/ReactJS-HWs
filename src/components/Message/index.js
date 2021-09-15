@@ -16,7 +16,7 @@ export const Message = (props) => {
 }
 
 Message.propTypes = {
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     dat: PropTypes.string.isRequired,
     author: PropTypes.string,
     text: PropTypes.string

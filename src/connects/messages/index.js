@@ -2,8 +2,7 @@ import { connect } from "react-redux";
 import { getMessages } from "../../store/messages";
 
 const mapStateToProps = (state, ownProps) => ({
-  messageItems: getMessages(state),
-  chatId: ownProps.chatId,
+  messages: getMessages(ownProps.chatId)(state),
   classes: ownProps.classes,
 })
 

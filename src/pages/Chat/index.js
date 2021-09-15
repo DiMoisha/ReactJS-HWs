@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Redirect } from "react-router-dom";
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
@@ -12,7 +12,7 @@ export const Chat = ({ classes }) => {
   const currentChat = useSelector(getChatById(chatId));
 
   if (!currentChat) {
-    return <Redirect to="/chates" />
+    return (<Redirect to="/chates" />);
   } else {
     return (
       <>

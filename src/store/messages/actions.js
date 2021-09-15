@@ -3,6 +3,10 @@ import { messagesApi } from "../../api";
 export const ADD_MESSAGES = 'ADD_MESSAGES';
 export const ADD_MESSAGE = 'ADD_MESSAGE';
 
+/**
+ * @param {object} messageItems
+ *
+ * */
 export const createAddMessages = (messageItems) => ({
   type: ADD_MESSAGES,
   payload: messageItems,
@@ -10,9 +14,8 @@ export const createAddMessages = (messageItems) => ({
 
 /**
  * @param {object} messageItem
- * @param {string} messageItem.dat
- * @param {string} messageItem.author
- * @param {string} messageItem.text
+ * @param {string} messageItem.chatId
+ * @param {array} messageItem.messages
  *
  * */
 export const createAddMessage = (messageItem) => ({
@@ -20,12 +23,12 @@ export const createAddMessage = (messageItem) => ({
   payload: messageItem,
 })
 
-export const initMessagesTracking = (chatId) => (dispatch) => {
-  messagesApi.getList(chatId,(messageItems) => {
+export const initMessagesTracking = (dispatch) => {
+  messagesApi.getList((messageItems) => {
     dispatch(createAddMessages(messageItems));
   })
 
-  messagesApi.getAdded(chatId,(message) => {
+  messagesApi.getAdded((message) => {
     dispatch(createAddMessage(message));
   })
 }

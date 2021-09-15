@@ -1,1 +1,1 @@
-export const getMessages = (state) => state.messages.messageItems || [];
+export const getMessages = (chatId) => (state) => state.messages.messageItems[chatId] || [];

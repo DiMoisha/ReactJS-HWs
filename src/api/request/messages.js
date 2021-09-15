@@ -6,35 +6,68 @@ export const messagesApi = {
             .child(chatId)
             .push(message)
             .then((ref) => ref.get())
-            .then((snapshot) => ({
-                id: snapshot.key,
-                ...snapshot.val(),
-            }))
+            .then((snapshot) => {
+                const messages = [];
+                const snapEntries = Object.entries(snapshot.val());
+
+                snapEntries.forEach(([key, value]) => {
+                    messages.push({
+                        id: key,
+                        ...value,
+                    });
+                });
+
+                return({
+                    chatId: snapshot.key,
+                    messages: messages,
+                })
+            })
     },
 
-    getList: (chatId, callback) => {
+    getList: (callback) => {
         db.ref('messages')
-            .child(chatId)
             .on('value', (snapshot) => {
-                const messageItems = []
+                let messageItems = {}
+
                 snapshot.forEach((snap) => {
-                    messageItems.push({
-                        id: snap.key,
-                        ...snap.val(),
-                    })
+                    const chatId = snap.key;
+                    const messages = [];
+
+                    const snapEntries = Object.entries(snap.val());
+
+                    snapEntries.forEach(([key, value]) => {
+                        messages.push({
+                            id: key,
+                            ...value,
+                        });
+                    });
+
+                    messageItems = {
+                    ...messageItems,
+                      [chatId]: messages,
+                    }
                 })
                 callback(messageItems)
             })
     },
 
-    getAdded: (chatId, callback) => {
+    getAdded: (callback) => {
         db.ref('messages')
-            .child(chatId)
             .on('child_added', (snapshot) => {
+                const messages = [];
+                const snapEntries = Object.entries(snapshot.val());
+
+                snapEntries.forEach(([key, value]) => {
+                    messages.push({
+                        id: key,
+                        ...value,
+                    });
+                });
+
                 callback({
-                    id: snapshot.key,
-                       ...snapshot.val(),
-                    })
+                    chatId: snapshot.key,
+                    messages: messages,
                 })
+            })
     },
 }
