@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b49ba5d-6128-4834-8a31-8c1be3ca074d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/__mocks__/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/endpoints.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/firebase/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/request/__mocks__/chates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/request/__mocks__/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/request/chates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/request/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/request/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatInputForm/__tests__/index.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatInputForm/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatItem/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatMenu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Layout/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Message/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MessageInputForm/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MessageList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connects/chates/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connects/gists/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connects/messages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connects/profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/ChatInputFormContainer/__tests__/index.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/ChatInputFormContainer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Chat/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hocs/PrivateRoute/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hocs/PublicRoute/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useDidUpdate/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSimpleForm/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useStyles/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Chat/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Chates/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Lesson8/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NoMatchPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SignUp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/chates/__tests__/index.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/chates/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/chates/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/chates/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/chates/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/gists/__mocks__/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/gists/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/gists/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/gists/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/gists/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/messages/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/messages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/messages/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/messages/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/profile/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/profile/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/profile/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1xPZDxMDIT78a7eUTy0c1zpTGU0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ОБУЧЕНИЕ\Знакомство с ReactJS\Lesson-7\Hw-7\src\containers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.index.test.js">
+    <configuration name="Тест редюсера - chatReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/store/chates/__tests__/index.test.js" />
+      <test-names>
+        <test-name value="Тест редюсера - chatReducer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ChatInputFormContainer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/containers/ChatInputFormContainer/__tests__/index.test.js" />
+      <test-names>
+        <test-name value="ChatInputFormContainer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="index.test.js (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/containers/ChatInputFormContainer/__tests__/index.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index.test.js (2)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/components/ChatInputForm/__tests__/index.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/store/chates/__tests__/index.test.js" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.index.test.js" />
+        <item itemvalue="Jest.index.test.js (1)" />
+        <item itemvalue="Jest.index.test.js (2)" />
+        <item itemvalue="Jest.ChatInputFormContainer" />
+        <item itemvalue="Jest.Тест редюсера - chatReducer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b49ba5d-6128-4834-8a31-8c1be3ca074d" name="Changes" comment="" />
+      <created>1630258581600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630258581600</updated>
+      <workItem from="1630258590596" duration="7347000" />
+      <workItem from="1630310935598" duration="14924000" />
+      <workItem from="1630415097349" duration="11340000" />
+      <workItem from="1630480101523" duration="34646000" />
+      <workItem from="1630929133979" duration="13631000" />
+      <workItem from="1631019066217" duration="15023000" />
+      <workItem from="1631193768919" duration="22363000" />
+      <workItem from="1631258156894" duration="14250000" />
+      <workItem from="1631349552595" duration="50713000" />
+      <workItem from="1631533032412" duration="594000" />
+      <workItem from="1631536014059" duration="40000" />
+      <workItem from="1631537017398" duration="20896000" />
+      <workItem from="1631582172637" duration="914000" />
+      <workItem from="1631600970100" duration="3298000" />
+      <workItem from="1631605882891" duration="545000" />
+      <workItem from="1631715974087" duration="38002000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
