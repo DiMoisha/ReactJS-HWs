@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { store } from './store'
+import './api/firebase';
 import './index.css';
-
 import App from './App';
-//import reportWebVitals from './reportWebVitals';
-
-const headingApp = 'Homework-1';
-const message = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati doloribus exercitationem debitis quo, vel dignissimos voluptatibus saepe veniam inventore voluptatum pariatur modi commodi eum, cupiditate tempora ullam tenetur ratione fugiat.";
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
- <React.StrictMode>
-   <App heading={headingApp} msgText={message} />
- </React.StrictMode>,
- document.getElementById("root")
+    <React.StrictMode>
+        <Provider store={store}>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
+
+reportWebVitals();
